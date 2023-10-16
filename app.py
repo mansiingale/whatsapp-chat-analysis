@@ -137,11 +137,11 @@ if uploaded_file is not None:
             st.pyplot(fig)
 
         #sentiment analysis
-        sentiment_df,sen =helper.sentiment_analysis(selected_user,df)
-        st.title("Sentiment Analysis")
-        st.dataframe(sentiment_df)
-        st.title("Overall sentiment is ")
-        st.write(sen)
+        # sentiment_df,sen =helper.sentiment_analysis(selected_user,df)
+        # st.title("Sentiment Analysis")
+        # st.dataframe(sentiment_df)
+        # st.title("Overall sentiment is ")
+        # st.write(sen)
 
 
 
