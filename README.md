@@ -1,6 +1,6 @@
 # whatsapp-chat-analyzer-project
 
-Try this web application on https://chatanalysis2023.streamlit.app/
+Try this web application on https://whatsapp-chat-analysis-23.streamlit.app/
 (kindly use incognito window for better results)
 
 This project examines a conversation between two individuals or a conversation in a WhatsApp group. It extracts insights, and visualizes the data from WhatsApp chat exports. 
