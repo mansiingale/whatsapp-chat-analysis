@@ -3,7 +3,7 @@ from wordcloud import WordCloud
 import pandas as pd
 from collections import Counter
 import emoji
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
+# from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 
 
@@ -134,27 +134,27 @@ def activity_heatmap(selected_user,df):
 
 
 
-def sentiment_analysis(selected_user,df):
-    if selected_user != 'Overall':
-        df = df[df['user'] == selected_user]
+# def sentiment_analysis(selected_user,df):
+#     if selected_user != 'Overall':
+#         df = df[df['user'] == selected_user]
 
-    senti_df=pd.DataFrame(df,columns=["date","user","message"])
-    sentiments=SentimentIntensityAnalyzer()
-    senti_df["Positive"]=[sentiments.polarity_scores(i)["pos"] for i in senti_df["message"]]
-    senti_df["Negative"] = [sentiments.polarity_scores(i)["neg"] for i in senti_df["message"]]
-    senti_df["Neutral"] = [sentiments.polarity_scores(i)["neu"] for i in senti_df["message"]]
+#     senti_df=pd.DataFrame(df,columns=["date","user","message"])
+#     sentiments=SentimentIntensityAnalyzer()
+#     senti_df["Positive"]=[sentiments.polarity_scores(i)["pos"] for i in senti_df["message"]]
+#     senti_df["Negative"] = [sentiments.polarity_scores(i)["neg"] for i in senti_df["message"]]
+#     senti_df["Neutral"] = [sentiments.polarity_scores(i)["neu"] for i in senti_df["message"]]
 
-    sen = " "
-    x = sum(senti_df['Positive'])
-    y = sum(senti_df['Negative'])
-    z = sum(senti_df['Neutral'])
+#     sen = " "
+#     x = sum(senti_df['Positive'])
+#     y = sum(senti_df['Negative'])
+#     z = sum(senti_df['Neutral'])
 
-    if (x > y) and (x > z):
-        sen="Positive"
-    elif (y > x) and (y > z):
-        sen="Negative"
-    else:
-        sen="Neutral"
+#     if (x > y) and (x > z):
+#         sen="Positive"
+#     elif (y > x) and (y > z):
+#         sen="Negative"
+#     else:
+#         sen="Neutral"
 
-    return senti_df,sen
+#     return senti_df,sen
 
