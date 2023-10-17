@@ -4,6 +4,7 @@ Try this web application on https://whatsapp-chat-analysis-23.streamlit.app/
 (kindly use incognito window for better results)
 
 This project examines a conversation between two individuals or a conversation in a WhatsApp group. It extracts insights, and visualizes the data from WhatsApp chat exports. 
+
 **Data Collection:**
 * Export the WhatsApp chat you want to analyze. You can do this by opening the chat, going to the chat settings, and choosing the "Export Chat" option. Save the chat as a .txt or .csv file.
 
